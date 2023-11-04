@@ -1,7 +1,7 @@
 ﻿using Game.SceneFlow;
 using HarmonyLib;
 
-namespace Cities2ModCollection.Patches
+namespace DevToolsEnabled.Patches
 {
     [HarmonyPatch(typeof(GameManager), "ParseOptions")]
     class GameManager_ParseOptionsPatch

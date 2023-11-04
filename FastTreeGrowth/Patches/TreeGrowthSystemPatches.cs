@@ -1,9 +1,9 @@
-﻿using Cities2ModCollection.Systems;
+﻿using FastTreeGrowth.Systems;
 using Game.Simulation;
 using Game;
 using HarmonyLib;
 
-namespace Cities2ModCollection.Patches
+namespace FastTreeGrowth.Patches
 {
     /// <summary>
     /// Overrides tree growth system so trees skip to adult phase ASAP.

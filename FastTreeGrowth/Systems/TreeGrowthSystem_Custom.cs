@@ -11,7 +11,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 
-namespace Cities2ModCollection.Systems
+namespace FastTreeGrowth.Systems
 {
     [CompilerGenerated]
     public class TreeGrowthSystem_Custom : GameSystemBase

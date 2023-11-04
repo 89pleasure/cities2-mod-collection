@@ -2,7 +2,7 @@
 using Game.UI.Tooltip;
 using HarmonyLib;
 
-namespace Cities2ModCollection.Patches
+namespace Cities1Unit.Patches
 {
     [HarmonyPatch(typeof(NetCourseTooltipSystem), "OnUpdate")]
     class NetworkPatchesNetCourseTooltipSystem_OnUpdatePatch
@@ -15,7 +15,7 @@ namespace Cities2ModCollection.Patches
             {
                 m_Length.value /= 8f; // Convert to Cities 1 units
                 m_Length.unit = "floatTwoFractions"; // Change to a generic unit type to stop showing m/ft
-                m_Length.label = LocalizedString.Value("U"); // Adjust the label to say 'U'
+                m_Length.label = LocalizedString.Value("u"); // Adjust the label to say 'u'
             }
         }
     }

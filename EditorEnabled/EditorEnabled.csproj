@@ -1,0 +1,415 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>disable</Nullable>
+		<RestoreAdditionalProjectSources>
+			https://api.nuget.org/v3/index.json;
+			https://nuget.bepinex.dev/v3/index.json;
+			https://nuget.samboy.dev/v3/index.json
+		</RestoreAdditionalProjectSources>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>latest</LangVersion>
+		<RootNamespace>EditorEnabled</RootNamespace>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<Configurations>Cities1Unit;DevToolsEnabled;All;EditorEnabled;FastTreeGrowth</Configurations>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Unity.Mono" Version="6.0.0-be.*" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+	<PackageReference Include="HarmonyX" Version="2.10.2" />
+  </ItemGroup>
+
+	<PropertyGroup>
+		<Cities2_Location>E:\SteamLibrary\steamapps\common\Cities Skylines II</Cities2_Location>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Cities2_Assembly_Location>..\unstripped_libs</Cities2_Assembly_Location>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Reference Include="Colossal.AssetPipeline">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.AssetPipeline.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.AssetPipeline.Native">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.AssetPipeline.Native.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.ATL">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.ATL.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.CharacterSystem">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.CharacterSystem.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.Collections">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.Collections.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.Core">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.Core.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.IO">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.IO.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.IO.AssetDatabase">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.IO.AssetDatabase.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.Localization">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.Localization.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.Logging">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.Logging.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.Mathematics">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.Mathematics.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.Mono.Cecil">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.Mono.Cecil.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.OdinSerializer">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.OdinSerializer.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.Plugins">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.Plugins.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.PSI.Common">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.PSI.Common.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.PSI.Discord">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.PSI.Discord.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.PSI.PdxSdk">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.PSI.PdxSdk.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.PSI.Steamworks">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.PSI.Steamworks.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.UI">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.UI.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Colossal.UI.Binding">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.UI.Binding.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="cohtml.Net">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\cohtml.Net.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Game">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Game.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Unity.Entities">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Unity.Entities.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Unity.InputSystem">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Unity.InputSystem.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Unity.Mathematics.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Unity.Collections">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Unity.Collections.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Unity.Burst">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Unity.Burst.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+			<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.AccessibilityModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.AIModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.AndroidJNIModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.AnimationModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.AssetBundleModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.AudioModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.ClothModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterInputModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.ClusterInputModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterRendererModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.ClusterRendererModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.ContentLoadModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.CoreModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.CrashReportingModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.DirectorModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.DSPGraphModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.GameCenterModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.GIModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.GridModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.HotReloadModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.ImageConversionModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.IMGUIModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.InputLegacyModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.InputModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.JSONSerializeModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.LocalizationModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.ParticleSystemModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.PerformanceReportingModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.Physics2DModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.PhysicsModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.ProfilerModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.PropertiesModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.ScreenCaptureModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.SharedInternalsModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.SpriteMaskModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.SpriteShapeModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.StreamingModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.SubstanceModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.SubsystemsModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.TerrainModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.TextRenderingModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.TilemapModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.TLSModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UIElementsModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UIModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UmbraModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityConnectModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityCurlModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityWebRequestModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.VehiclesModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.VFXModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.VideoModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.VirtualTexturingModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.VirtualTexturingModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.VRModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.WindModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.XRModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="if not exist &quot;$(Cities2_Location)\BepInEx\plugins\$(ProjectName)&quot; mkdir &quot;$(Cities2_Location)\BepInEx\plugins\$(ProjectName)&quot;&#xD;&#xA;copy /Y &quot;$(TargetDir)0Harmony.dll&quot; &quot;$(Cities2_Location)\BepInEx\plugins\$(ProjectName)\0Harmony.dll&quot;&#xD;&#xA;copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;$(Cities2_Location)\BepInEx\plugins\$(ProjectName)\$(ProjectName).dll&quot;" />
+	</Target>
+</Project>
