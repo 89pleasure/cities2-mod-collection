@@ -5,4 +5,8 @@
 2. **Cities1 Unit Mod** - Gives you back the "u" unit instead of m/ft by H3llb0und666
 4. **DevToolsEnabled Mod** - Enables DevTools to be used ingame. by H3llb0und666
 
-Thanks and big cudos to **H3llb0und666** for the idea and help with modding in this early stage.
+### Install
+Just download latest release and extract the folder content into your Cities Skylines II game folder.
+
+### Cudos to
+**H3llb0und666** for the idea and help with modding in this early stage.
