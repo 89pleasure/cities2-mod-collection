@@ -11,12 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToolsEnabled", "DevTools
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cities1Unit", "Cities1Unit\Cities1Unit.csproj", "{1C36A3EB-3BF9-40D2-80AE-763831829797}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnableUIDebugger", "EnableUIDebug\EnableUIDebugger.csproj", "{63B2DD91-37E8-417C-8E63-015BDE5F61EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		All|Any CPU = All|Any CPU
 		Cities1Unit|Any CPU = Cities1Unit|Any CPU
 		DevToolsEnabled|Any CPU = DevToolsEnabled|Any CPU
 		EditorEnabled|Any CPU = EditorEnabled|Any CPU
+		EnableUIDebug|Any CPU = EnableUIDebug|Any CPU
 		FastTreeGrowth|Any CPU = FastTreeGrowth|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
@@ -26,12 +29,14 @@ Global
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.EditorEnabled|Any CPU.Build.0 = EditorEnabled|Any CPU
+		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.EnableUIDebug|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.All|Any CPU.ActiveCfg = All|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.All|Any CPU.Build.0 = All|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.Cities1Unit|Any CPU.ActiveCfg = Cities1Unit|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
+		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.EnableUIDebug|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.FastTreeGrowth|Any CPU.Build.0 = FastTreeGrowth|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.All|Any CPU.ActiveCfg = All|Any CPU
@@ -40,6 +45,7 @@ Global
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.DevToolsEnabled|Any CPU.Build.0 = DevToolsEnabled|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
+		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.EnableUIDebug|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.All|Any CPU.ActiveCfg = All|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.All|Any CPU.Build.0 = All|Any CPU
@@ -47,7 +53,16 @@ Global
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.Cities1Unit|Any CPU.Build.0 = Cities1Unit|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
+		{1C36A3EB-3BF9-40D2-80AE-763831829797}.EnableUIDebug|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
+		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.All|Any CPU.ActiveCfg = All|Any CPU
+		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.All|Any CPU.Build.0 = All|Any CPU
+		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.Cities1Unit|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
+		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.DevToolsEnabled|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
+		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.EditorEnabled|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
+		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.EnableUIDebug|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
+		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.EnableUIDebug|Any CPU.Build.0 = EnableUIDebug|Any CPU
+		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.FastTreeGrowth|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

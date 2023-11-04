@@ -10,7 +10,7 @@
 		</RestoreAdditionalProjectSources>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
-		<RootNamespace>FastTreeGrowth</RootNamespace>
+		<RootNamespace>EnableUIDebugger</RootNamespace>
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 		<Configurations>Cities1Unit;DevToolsEnabled;All;EditorEnabled;FastTreeGrowth;EnableUIDebug</Configurations>
 	</PropertyGroup>
