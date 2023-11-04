@@ -10,7 +10,8 @@
 
 ### Howto use UIDebuggerMod
 Connect with Google Chrome to the UI Debugger by opening the following URL in your browser:
-	```**localhost:9444**```
+
+```localhost:9444```
 
 
 ### Install
