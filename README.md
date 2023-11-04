@@ -8,7 +8,7 @@
 5. **Enable UI Debugger** - Enables the UI Debugger to be used with Google Chrome. by 89pleasure
  
 
-## Howto use UIDebuggerMod
+### Howto use UIDebuggerMod
 Connect with Google Chrome to the UI Debugger by opening the following URL in your browser:
 	```**localhost:9444**```
 
