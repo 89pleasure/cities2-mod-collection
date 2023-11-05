@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToolsEnabled", "DevTools
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cities1Unit", "Cities1Unit\Cities1Unit.csproj", "{1C36A3EB-3BF9-40D2-80AE-763831829797}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnableUIDebugger", "EnableUIDebug\EnableUIDebugger.csproj", "{63B2DD91-37E8-417C-8E63-015BDE5F61EC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		All|Any CPU = All|Any CPU
@@ -55,14 +53,6 @@ Global
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.EnableUIDebug|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
-		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.All|Any CPU.ActiveCfg = All|Any CPU
-		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.All|Any CPU.Build.0 = All|Any CPU
-		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.Cities1Unit|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
-		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.DevToolsEnabled|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
-		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.EditorEnabled|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
-		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.EnableUIDebug|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
-		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.EnableUIDebug|Any CPU.Build.0 = EnableUIDebug|Any CPU
-		{63B2DD91-37E8-417C-8E63-015BDE5F61EC}.FastTreeGrowth|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
