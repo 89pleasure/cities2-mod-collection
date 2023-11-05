@@ -21,9 +21,11 @@ Just download latest release and extract the folder content into your Cities Sky
 1. [Visual Studio 2022](https://visualstudio.microsoft.com/de/downloads/) with C# Libraries and/or Unity Extension 
 2. Installed BepInEx6 for Unity-64bit mono. [Download here](https://builds.bepinex.dev/projects/bepinex_be)
 #### Compile
-1. You need to change the ```<Cities2_Location>``` property in each project file to your cities 2 games folder first
-2. Compile all or each mod by itself
-3. Start the game
+1. Open Cities2ModCollection.sln
+2. Change the ```<Cities2_Location>``` property in each project file to your cities 2 games folder first
+3. Select mod to build in top menu (default: **All - Any CPU**)
+4. Click **Build -> Build Solution** or Right click the mod you want to compile in the solution explorer and hit **Build** 
+5. Start the game
 
 ### Cudos to
 **H3llb0und666** for the idea and help with modding in this early stage.
