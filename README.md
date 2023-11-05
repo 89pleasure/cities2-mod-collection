@@ -13,9 +13,17 @@ Connect with Google Chrome to the UI Debugger by opening the following URL in yo
 
 ```localhost:9444```
 
-
 ### Install
 Just download latest release and extract the folder content into your Cities Skylines II game folder.
+
+### Compile mods yourself
+#### Requirements
+1. [Visual Studio 2022](https://visualstudio.microsoft.com/de/downloads/) with C# Libraries and/or Unity Extension 
+2. Installed BepInEx6 for Unity-64bit mono. [Download here](https://builds.bepinex.dev/projects/bepinex_be)
+#### Compile
+1. You need to change the ```<Cities2_Location>``` property in each project file to your cities 2 games folder first
+2. Compile all or each mod by itself
+3. Start the game
 
 ### Cudos to
 **H3llb0und666** for the idea and help with modding in this early stage.
