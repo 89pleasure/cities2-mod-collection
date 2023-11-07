@@ -138,6 +138,7 @@
 		<Reference Include="UnityEngine">
 			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.dll</HintPath>
 			<Private>False</Private>
+			<Aliases>UE</Aliases>
 		</Reference>
 		<Reference Include="UnityEngine.AccessibilityModule">
 			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.AccessibilityModule.dll</HintPath>
