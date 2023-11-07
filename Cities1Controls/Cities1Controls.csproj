@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
@@ -10,18 +10,18 @@
 		</RestoreAdditionalProjectSources>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
-		<RootNamespace>EditorEnabled</RootNamespace>
+		<RootNamespace>Cities1Controls</RootNamespace>
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-		<Configurations>Cities1Unit;DevToolsEnabled;All;EditorEnabled;FastTreeGrowth;EnableUIDebug</Configurations>
+		<Configurations>Cities1Controls;Cities1Unit;DevToolsEnabled;All;EditorEnabled;FastTreeGrowth;EnableUIDebug</Configurations>
 	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
-    <PackageReference Include="BepInEx.Unity.Mono" Version="6.0.0-be.*" IncludeAssets="compile" />
-    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
-	<PackageReference Include="HarmonyX" Version="2.10.2" />
-  </ItemGroup>
-	
+	<ItemGroup>
+		<PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+		<PackageReference Include="BepInEx.Unity.Mono" Version="6.0.0-be.*" IncludeAssets="compile" />
+		<PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+		<PackageReference Include="HarmonyX" Version="2.10.2" />
+	</ItemGroup>
+
 	<ItemGroup>
 		<Reference Include="Colossal.AssetPipeline">
 			<HintPath>$(Cities2_Game_Location)\Cities2_Data\Managed\Colossal.AssetPipeline.dll</HintPath>
@@ -138,6 +138,7 @@
 		<Reference Include="UnityEngine">
 			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.dll</HintPath>
 			<Private>False</Private>
+			<Aliases>UE</Aliases>
 		</Reference>
 		<Reference Include="UnityEngine.AccessibilityModule">
 			<HintPath>$(Cities2_Assembly_Location)\UnityEngine.AccessibilityModule.dll</HintPath>

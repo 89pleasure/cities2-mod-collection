@@ -29,13 +29,4 @@ namespace FastTreeGrowth.Patches
             return false; // Ignore original function
         }
     }
-
-    [HarmonyPatch(typeof(TreeGrowthSystem), "OnCreateForCompiler")]
-    public class TreeGrowthSystem_OnCreateForCompilerPatch
-    {
-        static bool Prefix(TreeGrowthSystem __instance)
-        {
-            return false; // Ignore original function
-        }
-    }
 }

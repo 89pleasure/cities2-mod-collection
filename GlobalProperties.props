@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup Label="GlobalProperties">
+		<Cities2_Game_Location>E:\YourPath\To\Cities2\GameFolder</Cities2_Game_Location>
+		<Cities2_Assembly_Location>..\unstripped_libs</Cities2_Assembly_Location>
+	</PropertyGroup>
+</Project>

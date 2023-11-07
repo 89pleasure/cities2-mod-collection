@@ -11,9 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevToolsEnabled", "DevTools
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cities1Unit", "Cities1Unit\Cities1Unit.csproj", "{1C36A3EB-3BF9-40D2-80AE-763831829797}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cities1Controls", "Cities1Controls\Cities1Controls.csproj", "{6F113AFC-427F-4478-BB7C-636213DA1141}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedProps", "SharedProps", "{8909381E-DB68-4D33-BA02-58577B0AF7B1}"
+	ProjectSection(SolutionItems) = preProject
+		GlobalProperties.props = GlobalProperties.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		All|Any CPU = All|Any CPU
+		Cities1Controls|Any CPU = Cities1Controls|Any CPU
 		Cities1Unit|Any CPU = Cities1Unit|Any CPU
 		DevToolsEnabled|Any CPU = DevToolsEnabled|Any CPU
 		EditorEnabled|Any CPU = EditorEnabled|Any CPU
@@ -23,6 +31,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.All|Any CPU.ActiveCfg = All|Any CPU
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.All|Any CPU.Build.0 = All|Any CPU
+		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.Cities1Controls|Any CPU.ActiveCfg = Cities1Unit|Any CPU
+		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.Cities1Controls|Any CPU.Build.0 = Cities1Unit|Any CPU
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.Cities1Unit|Any CPU.ActiveCfg = Cities1Unit|Any CPU
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
@@ -31,6 +41,8 @@ Global
 		{BD0ACAFE-C6B2-4958-AF36-A47462783B13}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.All|Any CPU.ActiveCfg = All|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.All|Any CPU.Build.0 = All|Any CPU
+		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.Cities1Controls|Any CPU.ActiveCfg = Cities1Unit|Any CPU
+		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.Cities1Controls|Any CPU.Build.0 = Cities1Unit|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.Cities1Unit|Any CPU.ActiveCfg = Cities1Unit|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
@@ -39,6 +51,8 @@ Global
 		{658D10D9-AB1D-4436-BE9A-E84B96F7FB51}.FastTreeGrowth|Any CPU.Build.0 = FastTreeGrowth|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.All|Any CPU.ActiveCfg = All|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.All|Any CPU.Build.0 = All|Any CPU
+		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.Cities1Controls|Any CPU.ActiveCfg = Cities1Unit|Any CPU
+		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.Cities1Controls|Any CPU.Build.0 = Cities1Unit|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.Cities1Unit|Any CPU.ActiveCfg = Cities1Unit|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.DevToolsEnabled|Any CPU.Build.0 = DevToolsEnabled|Any CPU
@@ -47,12 +61,28 @@ Global
 		{1A9105EB-725A-4368-9CDB-3FC3F105A8AC}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.All|Any CPU.ActiveCfg = All|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.All|Any CPU.Build.0 = All|Any CPU
+		{1C36A3EB-3BF9-40D2-80AE-763831829797}.Cities1Controls|Any CPU.ActiveCfg = Cities1Unit|Any CPU
+		{1C36A3EB-3BF9-40D2-80AE-763831829797}.Cities1Controls|Any CPU.Build.0 = Cities1Unit|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.Cities1Unit|Any CPU.ActiveCfg = Cities1Unit|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.Cities1Unit|Any CPU.Build.0 = Cities1Unit|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.EnableUIDebug|Any CPU.ActiveCfg = EditorEnabled|Any CPU
 		{1C36A3EB-3BF9-40D2-80AE-763831829797}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.All|Any CPU.ActiveCfg = All|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.All|Any CPU.Build.0 = All|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.Cities1Controls|Any CPU.ActiveCfg = Cities1Controls|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.Cities1Controls|Any CPU.Build.0 = Cities1Controls|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.Cities1Unit|Any CPU.ActiveCfg = Cities1Unit|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.Cities1Unit|Any CPU.Build.0 = Cities1Unit|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.DevToolsEnabled|Any CPU.ActiveCfg = DevToolsEnabled|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.DevToolsEnabled|Any CPU.Build.0 = DevToolsEnabled|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.EditorEnabled|Any CPU.ActiveCfg = EditorEnabled|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.EditorEnabled|Any CPU.Build.0 = EditorEnabled|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.EnableUIDebug|Any CPU.ActiveCfg = EnableUIDebug|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.EnableUIDebug|Any CPU.Build.0 = EnableUIDebug|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.FastTreeGrowth|Any CPU.ActiveCfg = FastTreeGrowth|Any CPU
+		{6F113AFC-427F-4478-BB7C-636213DA1141}.FastTreeGrowth|Any CPU.Build.0 = FastTreeGrowth|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
