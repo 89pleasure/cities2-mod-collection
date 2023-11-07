@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cities1Controls", "Cities1C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedProps", "SharedProps", "{8909381E-DB68-4D33-BA02-58577B0AF7B1}"
 	ProjectSection(SolutionItems) = preProject
-		GlobalProperties.props = GlobalProperties.props
+		GlobalProperties.props.dist = GlobalProperties.props.dist
 	EndProjectSection
 EndProject
 Global
